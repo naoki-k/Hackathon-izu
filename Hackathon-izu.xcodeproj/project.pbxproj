@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2129C59E694A27F3DC293212 /* Pods_Hackathon_izuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC1F94BE44406903054378 /* Pods_Hackathon_izuTests.framework */; };
+		5B460F50265D338F000BA2BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B460F4F265D338F000BA2BD /* GoogleService-Info.plist */; };
 		5BDF331A265BDC4D00501DE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDF3319265BDC4D00501DE0 /* AppDelegate.swift */; };
 		5BDF331C265BDC4D00501DE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDF331B265BDC4D00501DE0 /* SceneDelegate.swift */; };
 		5BDF331E265BDC4D00501DE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDF331D265BDC4D00501DE0 /* ViewController.swift */; };
@@ -15,6 +17,8 @@
 		5BDF3326265BDC4E00501DE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDF3324265BDC4E00501DE0 /* LaunchScreen.storyboard */; };
 		5BDF3331265BDC4E00501DE0 /* Hackathon_izuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDF3330265BDC4E00501DE0 /* Hackathon_izuTests.swift */; };
 		5BDF333C265BDC4E00501DE0 /* Hackathon_izuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDF333B265BDC4E00501DE0 /* Hackathon_izuUITests.swift */; };
+		DFDED255FE456EB2B53B3CCC /* Pods_Hackathon_izu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA762085FEF7518B70BABFDE /* Pods_Hackathon_izu.framework */; };
+		E1E26A70EB1473B6F9153968 /* Pods_Hackathon_izu_Hackathon_izuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D72525AB4247BBEC3EE817 /* Pods_Hackathon_izu_Hackathon_izuUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0ECB8847E8CD1E0063330ACF /* Pods-Hackathon-izuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon-izuTests.debug.xcconfig"; path = "Target Support Files/Pods-Hackathon-izuTests/Pods-Hackathon-izuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		155A123394F2F987F6C96B86 /* Pods-Hackathon-izu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon-izu.debug.xcconfig"; path = "Target Support Files/Pods-Hackathon-izu/Pods-Hackathon-izu.debug.xcconfig"; sourceTree = "<group>"; };
+		25D72525AB4247BBEC3EE817 /* Pods_Hackathon_izu_Hackathon_izuUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon_izu_Hackathon_izuUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DC1F94BE44406903054378 /* Pods_Hackathon_izuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon_izuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B460F4B265D2F0B000BA2BD /* Izu.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Izu.gpx; sourceTree = "<group>"; };
+		5B460F4F265D338F000BA2BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5BDF3316265BDC4D00501DE0 /* Hackathon-izu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hackathon-izu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDF3319265BDC4D00501DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BDF331B265BDC4D00501DE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,11 @@
 		5BDF3337265BDC4E00501DE0 /* Hackathon-izuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hackathon-izuUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDF333B265BDC4E00501DE0 /* Hackathon_izuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hackathon_izuUITests.swift; sourceTree = "<group>"; };
 		5BDF333D265BDC4E00501DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883489F38C421AF1D7E4AB31 /* Pods-Hackathon-izu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon-izu.release.xcconfig"; path = "Target Support Files/Pods-Hackathon-izu/Pods-Hackathon-izu.release.xcconfig"; sourceTree = "<group>"; };
+		B898BCD5910EE603A3660428 /* Pods-Hackathon-izu-Hackathon-izuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon-izu-Hackathon-izuUITests.release.xcconfig"; path = "Target Support Files/Pods-Hackathon-izu-Hackathon-izuUITests/Pods-Hackathon-izu-Hackathon-izuUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D6B08A539A378CAAC46EAB7C /* Pods-Hackathon-izu-Hackathon-izuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon-izu-Hackathon-izuUITests.debug.xcconfig"; path = "Target Support Files/Pods-Hackathon-izu-Hackathon-izuUITests/Pods-Hackathon-izu-Hackathon-izuUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA762085FEF7518B70BABFDE /* Pods_Hackathon_izu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon_izu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E838924D52F8C98AC871092A /* Pods-Hackathon-izuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon-izuTests.release.xcconfig"; path = "Target Support Files/Pods-Hackathon-izuTests/Pods-Hackathon-izuTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFDED255FE456EB2B53B3CCC /* Pods_Hackathon_izu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2129C59E694A27F3DC293212 /* Pods_Hackathon_izuTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +87,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E26A70EB1473B6F9153968 /* Pods_Hackathon_izu_Hackathon_izuUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1235DD03D1A03E197CDB33B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA762085FEF7518B70BABFDE /* Pods_Hackathon_izu.framework */,
+				25D72525AB4247BBEC3EE817 /* Pods_Hackathon_izu_Hackathon_izuUITests.framework */,
+				40DC1F94BE44406903054378 /* Pods_Hackathon_izuTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5BDF330D265BDC4D00501DE0 = {
 			isa = PBXGroup;
 			children = (
+				5B460F4F265D338F000BA2BD /* GoogleService-Info.plist */,
+				5B460F4B265D2F0B000BA2BD /* Izu.gpx */,
 				5BDF3318265BDC4D00501DE0 /* Hackathon-izu */,
 				5BDF332F265BDC4E00501DE0 /* Hackathon-izuTests */,
 				5BDF333A265BDC4E00501DE0 /* Hackathon-izuUITests */,
 				5BDF3317265BDC4D00501DE0 /* Products */,
+				7C03509B96CE9B1B63223F8C /* Pods */,
+				1235DD03D1A03E197CDB33B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +160,19 @@
 			path = "Hackathon-izuUITests";
 			sourceTree = "<group>";
 		};
+		7C03509B96CE9B1B63223F8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				155A123394F2F987F6C96B86 /* Pods-Hackathon-izu.debug.xcconfig */,
+				883489F38C421AF1D7E4AB31 /* Pods-Hackathon-izu.release.xcconfig */,
+				D6B08A539A378CAAC46EAB7C /* Pods-Hackathon-izu-Hackathon-izuUITests.debug.xcconfig */,
+				B898BCD5910EE603A3660428 /* Pods-Hackathon-izu-Hackathon-izuUITests.release.xcconfig */,
+				0ECB8847E8CD1E0063330ACF /* Pods-Hackathon-izuTests.debug.xcconfig */,
+				E838924D52F8C98AC871092A /* Pods-Hackathon-izuTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BDF3340265BDC4E00501DE0 /* Build configuration list for PBXNativeTarget "Hackathon-izu" */;
 			buildPhases = (
+				DA8AB9233E237C663965DC7D /* [CP] Check Pods Manifest.lock */,
 				5BDF3312265BDC4D00501DE0 /* Sources */,
 				5BDF3313265BDC4D00501DE0 /* Frameworks */,
 				5BDF3314265BDC4D00501DE0 /* Resources */,
+				EE5A35E78BDA406DAD843CAB /* [CP] Embed Pods Frameworks */,
+				5B460F78265D4F30000BA2BD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -152,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BDF3343265BDC4E00501DE0 /* Build configuration list for PBXNativeTarget "Hackathon-izuTests" */;
 			buildPhases = (
+				2CD7B79D606306232DF1982A /* [CP] Check Pods Manifest.lock */,
 				5BDF3328265BDC4E00501DE0 /* Sources */,
 				5BDF3329265BDC4E00501DE0 /* Frameworks */,
 				5BDF332A265BDC4E00501DE0 /* Resources */,
@@ -170,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BDF3346265BDC4E00501DE0 /* Build configuration list for PBXNativeTarget "Hackathon-izuUITests" */;
 			buildPhases = (
+				846E0D4B9C3DAE8DB6720D55 /* [CP] Check Pods Manifest.lock */,
 				5BDF3333265BDC4E00501DE0 /* Sources */,
 				5BDF3334265BDC4E00501DE0 /* Frameworks */,
 				5BDF3335265BDC4E00501DE0 /* Resources */,
+				9863E8D46B39DDA503EB9969 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BDF3326265BDC4E00501DE0 /* LaunchScreen.storyboard in Resources */,
+				5B460F50265D338F000BA2BD /* GoogleService-Info.plist in Resources */,
 				5BDF3323265BDC4E00501DE0 /* Assets.xcassets in Resources */,
 				5BDF3321265BDC4D00501DE0 /* Main.storyboard in Resources */,
 			);
@@ -252,6 +304,128 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CD7B79D606306232DF1982A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackathon-izuTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B460F78265D4F30000BA2BD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		846E0D4B9C3DAE8DB6720D55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackathon-izu-Hackathon-izuUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9863E8D46B39DDA503EB9969 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackathon-izu-Hackathon-izuUITests/Pods-Hackathon-izu-Hackathon-izuUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackathon-izu-Hackathon-izuUITests/Pods-Hackathon-izu-Hackathon-izuUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hackathon-izu-Hackathon-izuUITests/Pods-Hackathon-izu-Hackathon-izuUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA8AB9233E237C663965DC7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackathon-izu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE5A35E78BDA406DAD843CAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackathon-izu/Pods-Hackathon-izu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackathon-izu/Pods-Hackathon-izu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hackathon-izu/Pods-Hackathon-izu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BDF3312265BDC4D00501DE0 /* Sources */ = {
@@ -349,7 +523,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -433,6 +607,7 @@
 		};
 		5BDF3341265BDC4E00501DE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 155A123394F2F987F6C96B86 /* Pods-Hackathon-izu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +626,7 @@
 		};
 		5BDF3342265BDC4E00501DE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 883489F38C421AF1D7E4AB31 /* Pods-Hackathon-izu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +645,7 @@
 		};
 		5BDF3344265BDC4E00501DE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ECB8847E8CD1E0063330ACF /* Pods-Hackathon-izuTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +667,7 @@
 		};
 		5BDF3345265BDC4E00501DE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E838924D52F8C98AC871092A /* Pods-Hackathon-izuTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +689,7 @@
 		};
 		5BDF3347265BDC4E00501DE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6B08A539A378CAAC46EAB7C /* Pods-Hackathon-izu-Hackathon-izuUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +709,7 @@
 		};
 		5BDF3348265BDC4E00501DE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B898BCD5910EE603A3660428 /* Pods-Hackathon-izu-Hackathon-izuUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -62,5 +62,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>アプリを利用するには位置情報を許可してください。</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>アプリを利用するには位置情報を許可してください。</string>
 </dict>
 </plist>
