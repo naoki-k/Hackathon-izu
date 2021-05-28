@@ -6,9 +6,6 @@ target 'Hackathon-izu' do
   use_frameworks!
 
   # Pods for Hackathon-izu
-  pod 'Firebase/Crashlytics'
-  pod 'Firebase/Analytics'
-
   pod 'FloatingPanel'
   pod 'Erik'
 

@@ -12,7 +12,6 @@
 		5B09475A2660DA8300EB9517 /* SearchWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0947592660DA8300EB9517 /* SearchWindowViewController.swift */; };
 		5B0947832660EA8900EB9517 /* spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0947822660EA8900EB9517 /* spot.swift */; };
 		5B09478A2661181600EB9517 /* GoogleMapScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0947892661181600EB9517 /* GoogleMapScraper.swift */; };
-		5B460F50265D338F000BA2BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B460F4F265D338F000BA2BD /* GoogleService-Info.plist */; };
 		5BDF331A265BDC4D00501DE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDF3319265BDC4D00501DE0 /* AppDelegate.swift */; };
 		5BDF331C265BDC4D00501DE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDF331B265BDC4D00501DE0 /* SceneDelegate.swift */; };
 		5BDF331E265BDC4D00501DE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDF331D265BDC4D00501DE0 /* ViewController.swift */; };
@@ -52,7 +51,6 @@
 		5B0947822660EA8900EB9517 /* spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spot.swift; sourceTree = "<group>"; };
 		5B0947892661181600EB9517 /* GoogleMapScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapScraper.swift; sourceTree = "<group>"; };
 		5B460F4B265D2F0B000BA2BD /* Izu.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Izu.gpx; sourceTree = "<group>"; };
-		5B460F4F265D338F000BA2BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5BDF3316265BDC4D00501DE0 /* Hackathon-izu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hackathon-izu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDF3319265BDC4D00501DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BDF331B265BDC4D00501DE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 		5BDF330D265BDC4D00501DE0 = {
 			isa = PBXGroup;
 			children = (
-				5B460F4F265D338F000BA2BD /* GoogleService-Info.plist */,
 				5B460F4B265D2F0B000BA2BD /* Izu.gpx */,
 				5BDF3318265BDC4D00501DE0 /* Hackathon-izu */,
 				5BDF332F265BDC4E00501DE0 /* Hackathon-izuTests */,
@@ -245,7 +242,6 @@
 				5BDF3313265BDC4D00501DE0 /* Frameworks */,
 				5BDF3314265BDC4D00501DE0 /* Resources */,
 				EE5A35E78BDA406DAD843CAB /* [CP] Embed Pods Frameworks */,
-				5B460F78265D4F30000BA2BD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -344,7 +340,6 @@
 			files = (
 				5BDF3326265BDC4E00501DE0 /* LaunchScreen.storyboard in Resources */,
 				5B0947552660D9FC00EB9517 /* SearchWindow.storyboard in Resources */,
-				5B460F50265D338F000BA2BD /* GoogleService-Info.plist in Resources */,
 				5BDF3323265BDC4E00501DE0 /* Assets.xcassets in Resources */,
 				5BDF3321265BDC4D00501DE0 /* Main.storyboard in Resources */,
 			);
@@ -388,25 +383,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		5B460F78265D4F30000BA2BD /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
-				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
 		846E0D4B9C3DAE8DB6720D55 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
