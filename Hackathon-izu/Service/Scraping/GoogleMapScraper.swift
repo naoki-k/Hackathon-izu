@@ -22,7 +22,7 @@ class GoogleMapScraper {
         let error: Error? = nil
 
         browser.layoutEngine.browse(url: url) { document, error in
-            guard let html = document as? String, let doc = try? browser.htmlParser.parse(html, encoding: .utf8) else { return }
+            guard let html = document as? String, let doc = try? self.browser.htmlParser.parse(html, encoding: .utf8) else { return }
         }
 
         return (result, error)
