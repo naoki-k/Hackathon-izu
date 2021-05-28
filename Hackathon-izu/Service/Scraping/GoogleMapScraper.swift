@@ -6,17 +6,18 @@
 //
 
 import Foundation
+import WebKit
 import Erik
 
 class GoogleMapScraper {
     let url = URL(string: "https://www.google.co.jp/maps")!
     
-    func scrape(keyword: String) -> ([Spot], Error?) {
+    func scrape(keyword: String, webView: WKWebView? = nil) -> ([Spot], Error?) {
         let result: [Spot] = []
         let error: Error? = nil
 
-        Erik.visit(url: url) { object, error in
-            guard error == nil, let doc = object else { return }
+        let browser = Erik(webView: webView)
+        browser.layoutEngine.browse(url: url) { (document, error) in
             
         }
 

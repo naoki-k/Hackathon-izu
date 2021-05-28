@@ -22,6 +22,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Omr-jA-z1H">
+                                <rect key="frame" x="0.0" y="108" width="414" height="2"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="yts-ri-muq"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byX-s9-ehn">
                                 <rect key="frame" x="367" y="64" width="31" height="30"/>
                                 <state key="normal" title="実行"/>
@@ -29,26 +36,47 @@
                                     <action selector="run" destination="aGZ-GV-tNx" eventType="touchUpInside" id="eWU-4F-LyA"/>
                                 </connections>
                             </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zp-Gp-oNi">
+                                <rect key="frame" x="16" y="130" width="382" height="732"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sz1-Zg-dgZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="1zp-Gp-oNi" firstAttribute="leading" secondItem="sz1-Zg-dgZ" secondAttribute="leading" constant="16" id="5W5-9b-kLq"/>
                             <constraint firstItem="sz1-Zg-dgZ" firstAttribute="trailing" secondItem="byX-s9-ehn" secondAttribute="trailing" constant="16" id="BZo-QS-X24"/>
                             <constraint firstItem="byX-s9-ehn" firstAttribute="leading" secondItem="fLI-CK-nXT" secondAttribute="trailing" constant="10" id="CfL-us-A8x"/>
                             <constraint firstItem="fLI-CK-nXT" firstAttribute="leading" secondItem="sz1-Zg-dgZ" secondAttribute="leading" constant="16" id="JkL-ty-xDG"/>
+                            <constraint firstItem="sz1-Zg-dgZ" firstAttribute="trailing" secondItem="1zp-Gp-oNi" secondAttribute="trailing" constant="16" id="PFw-uR-f1D"/>
+                            <constraint firstItem="sz1-Zg-dgZ" firstAttribute="bottom" secondItem="1zp-Gp-oNi" secondAttribute="bottom" id="Sdi-EI-SWj"/>
+                            <constraint firstItem="Omr-jA-z1H" firstAttribute="leading" secondItem="sz1-Zg-dgZ" secondAttribute="leading" id="i1X-WM-BvC"/>
+                            <constraint firstItem="1zp-Gp-oNi" firstAttribute="top" secondItem="Omr-jA-z1H" secondAttribute="bottom" constant="20" id="iej-c2-oHk"/>
+                            <constraint firstItem="sz1-Zg-dgZ" firstAttribute="trailing" secondItem="Omr-jA-z1H" secondAttribute="trailing" id="oBG-uW-joy"/>
+                            <constraint firstItem="Omr-jA-z1H" firstAttribute="top" secondItem="fLI-CK-nXT" secondAttribute="bottom" constant="10" id="oKF-tW-RxK"/>
                             <constraint firstItem="fLI-CK-nXT" firstAttribute="top" secondItem="sz1-Zg-dgZ" secondAttribute="top" constant="20" id="obx-6J-fiD"/>
                             <constraint firstItem="byX-s9-ehn" firstAttribute="top" secondItem="sz1-Zg-dgZ" secondAttribute="top" constant="20" id="yT9-NT-hST"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="1zp-Gp-oNi" id="WGK-RR-KAL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rse-vB-OVL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57" y="90"/>
+            <point key="canvasLocation" x="-57.971014492753625" y="89.732142857142847"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

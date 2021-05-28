@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WebKit
 import FloatingPanel
 
 final class SearchWindowViewController: UIViewController, FloatingPanelLayout {
@@ -20,12 +21,10 @@ final class SearchWindowViewController: UIViewController, FloatingPanelLayout {
     }
     
     private lazy var googleMapScraper = GoogleMapScraper()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    
+    @IBOutlet private weak var webView: WKWebView!
     
     @IBAction func run() {
-        googleMapScraper.scrape(keyword: "伊豆 観光")
+        googleMapScraper.scrape(keyword: "伊豆 観光", webView: webView)
     }
 }
