@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2129C59E694A27F3DC293212 /* Pods_Hackathon_izuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC1F94BE44406903054378 /* Pods_Hackathon_izuTests.framework */; };
+		5B0947552660D9FC00EB9517 /* SearchWindow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0947542660D9FC00EB9517 /* SearchWindow.storyboard */; };
+		5B09475A2660DA8300EB9517 /* SearchWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0947592660DA8300EB9517 /* SearchWindowViewController.swift */; };
+		5B0947832660EA8900EB9517 /* spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0947822660EA8900EB9517 /* spot.swift */; };
 		5B460F50265D338F000BA2BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B460F4F265D338F000BA2BD /* GoogleService-Info.plist */; };
 		5BDF331A265BDC4D00501DE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDF3319265BDC4D00501DE0 /* AppDelegate.swift */; };
 		5BDF331C265BDC4D00501DE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDF331B265BDC4D00501DE0 /* SceneDelegate.swift */; };
@@ -43,6 +46,9 @@
 		155A123394F2F987F6C96B86 /* Pods-Hackathon-izu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon-izu.debug.xcconfig"; path = "Target Support Files/Pods-Hackathon-izu/Pods-Hackathon-izu.debug.xcconfig"; sourceTree = "<group>"; };
 		25D72525AB4247BBEC3EE817 /* Pods_Hackathon_izu_Hackathon_izuUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon_izu_Hackathon_izuUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DC1F94BE44406903054378 /* Pods_Hackathon_izuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon_izuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B0947542660D9FC00EB9517 /* SearchWindow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchWindow.storyboard; sourceTree = "<group>"; };
+		5B0947592660DA8300EB9517 /* SearchWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWindowViewController.swift; sourceTree = "<group>"; };
+		5B0947822660EA8900EB9517 /* spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spot.swift; sourceTree = "<group>"; };
 		5B460F4B265D2F0B000BA2BD /* Izu.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Izu.gpx; sourceTree = "<group>"; };
 		5B460F4F265D338F000BA2BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5BDF3316265BDC4D00501DE0 /* Hackathon-izu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hackathon-izu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +110,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5B0947512660D96F00EB9517 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5B0947522660D9B400EB9517 /* main */,
+				5B0947532660D9D100EB9517 /* search_window */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5B0947522660D9B400EB9517 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				5BDF331D265BDC4D00501DE0 /* ViewController.swift */,
+				5BDF331F265BDC4D00501DE0 /* Main.storyboard */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		5B0947532660D9D100EB9517 /* search_window */ = {
+			isa = PBXGroup;
+			children = (
+				5B0947542660D9FC00EB9517 /* SearchWindow.storyboard */,
+				5B0947592660DA8300EB9517 /* SearchWindowViewController.swift */,
+			);
+			path = search_window;
+			sourceTree = "<group>";
+		};
+		5B09477E2660EA5100EB9517 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B0947822660EA8900EB9517 /* spot.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5BDF330D265BDC4D00501DE0 = {
 			isa = PBXGroup;
 			children = (
@@ -131,10 +172,10 @@
 		5BDF3318265BDC4D00501DE0 /* Hackathon-izu */ = {
 			isa = PBXGroup;
 			children = (
+				5B09477E2660EA5100EB9517 /* Models */,
+				5B0947512660D96F00EB9517 /* Presentation */,
 				5BDF3319265BDC4D00501DE0 /* AppDelegate.swift */,
 				5BDF331B265BDC4D00501DE0 /* SceneDelegate.swift */,
-				5BDF331D265BDC4D00501DE0 /* ViewController.swift */,
-				5BDF331F265BDC4D00501DE0 /* Main.storyboard */,
 				5BDF3322265BDC4E00501DE0 /* Assets.xcassets */,
 				5BDF3324265BDC4E00501DE0 /* LaunchScreen.storyboard */,
 				5BDF3327265BDC4E00501DE0 /* Info.plist */,
@@ -283,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BDF3326265BDC4E00501DE0 /* LaunchScreen.storyboard in Resources */,
+				5B0947552660D9FC00EB9517 /* SearchWindow.storyboard in Resources */,
 				5B460F50265D338F000BA2BD /* GoogleService-Info.plist in Resources */,
 				5BDF3323265BDC4E00501DE0 /* Assets.xcassets in Resources */,
 				5BDF3321265BDC4D00501DE0 /* Main.storyboard in Resources */,
@@ -432,9 +474,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B09475A2660DA8300EB9517 /* SearchWindowViewController.swift in Sources */,
 				5BDF331E265BDC4D00501DE0 /* ViewController.swift in Sources */,
 				5BDF331A265BDC4D00501DE0 /* AppDelegate.swift in Sources */,
 				5BDF331C265BDC4D00501DE0 /* SceneDelegate.swift in Sources */,
+				5B0947832660EA8900EB9517 /* spot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +591,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -601,6 +646,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

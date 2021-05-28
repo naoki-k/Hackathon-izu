@@ -9,6 +9,9 @@ target 'Hackathon-izu' do
   pod 'Firebase/Crashlytics'
   pod 'Firebase/Analytics'
 
+  pod 'FloatingPanel'
+  pod 'Erik'
+
   target 'Hackathon-izuTests' do
     inherit! :search_paths
     # Pods for testing
@@ -17,5 +20,4 @@ target 'Hackathon-izu' do
   target 'Hackathon-izuUITests' do
     # Pods for testing
   end
-
 end

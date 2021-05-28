@@ -8,14 +8,25 @@
 import UIKit
 import MapKit
 import CoreLocation
+import FloatingPanel
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     @IBOutlet private weak var map: MKMapView!
     private lazy var locationManager = CLLocationManager()
+    
+    private lazy var floatingPanelController = FloatingPanelController()
+    private var floatingPanel: SearchWindowViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
+
+        floatingPanel = UIStoryboard(name: "SearchWindow", bundle: nil).instantiateInitialViewController() as? SearchWindowViewController
+
+        floatingPanelController.delegate = self
+        floatingPanelController.layout = floatingPanel
+        floatingPanelController.set(contentViewController: floatingPanel)
+        floatingPanelController.addPanel(toParent: self)
     }
 }
 
@@ -41,4 +52,20 @@ extension ViewController: CLLocationManagerDelegate {
             map.region = region
         }
     }
+}
+
+
+extension ViewController: FloatingPanelControllerDelegate {
+    func floatingPanelWillBeginDragging(_ vc: FloatingPanelController) {
+//            if vc.position == .full {
+//                searchVC.searchBar.showsCancelButton = false
+//                searchVC.searchBar.resignFirstResponder()
+//            }
+        }
+
+        func floatingPanelWillEndDragging(_ vc: FloatingPanelController, withVelocity velocity: CGPoint, targetState: UnsafeMutablePointer<FloatingPanelState>) {
+//            if targetState.pointee != .full {
+//                searchVC.hideHeader()
+//            }
+        }
 }
