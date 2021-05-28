@@ -12,6 +12,7 @@
 		5B09475A2660DA8300EB9517 /* SearchWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0947592660DA8300EB9517 /* SearchWindowViewController.swift */; };
 		5B0947832660EA8900EB9517 /* spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0947822660EA8900EB9517 /* spot.swift */; };
 		5B09478A2661181600EB9517 /* GoogleMapScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0947892661181600EB9517 /* GoogleMapScraper.swift */; };
+		5BD153F5266143D0008DF18D /* GnaviScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD153F4266143CF008DF18D /* GnaviScraper.swift */; };
 		5BDF331A265BDC4D00501DE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDF3319265BDC4D00501DE0 /* AppDelegate.swift */; };
 		5BDF331C265BDC4D00501DE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDF331B265BDC4D00501DE0 /* SceneDelegate.swift */; };
 		5BDF331E265BDC4D00501DE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDF331D265BDC4D00501DE0 /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 		5B0947822660EA8900EB9517 /* spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spot.swift; sourceTree = "<group>"; };
 		5B0947892661181600EB9517 /* GoogleMapScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapScraper.swift; sourceTree = "<group>"; };
 		5B460F4B265D2F0B000BA2BD /* Izu.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Izu.gpx; sourceTree = "<group>"; };
+		5BD153F4266143CF008DF18D /* GnaviScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnaviScraper.swift; sourceTree = "<group>"; };
 		5BDF3316265BDC4D00501DE0 /* Hackathon-izu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hackathon-izu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDF3319265BDC4D00501DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BDF331B265BDC4D00501DE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				5B0947892661181600EB9517 /* GoogleMapScraper.swift */,
+				5BD153F4266143CF008DF18D /* GnaviScraper.swift */,
 			);
 			path = Scraping;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD153F5266143D0008DF18D /* GnaviScraper.swift in Sources */,
 				5B09475A2660DA8300EB9517 /* SearchWindowViewController.swift in Sources */,
 				5B09478A2661181600EB9517 /* GoogleMapScraper.swift in Sources */,
 				5BDF331E265BDC4D00501DE0 /* ViewController.swift in Sources */,

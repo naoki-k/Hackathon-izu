@@ -11,14 +11,18 @@ import Erik
 
 class GoogleMapScraper {
     let url = URL(string: "https://www.google.co.jp/maps")!
+    private var browser: Erik!
     
-    func scrape(keyword: String, webView: WKWebView? = nil) -> ([Spot], Error?) {
+    init(webView: WKWebView) {
+        browser = Erik(webView: webView)
+    }
+    
+    func scrape(keyword: String) -> ([Spot], Error?) {
         let result: [Spot] = []
         let error: Error? = nil
 
-        let browser = Erik(webView: webView)
-        browser.layoutEngine.browse(url: url) { (document, error) in
-            
+        browser.layoutEngine.browse(url: url) { document, error in
+            guard let html = document as? String, let doc = try? browser.htmlParser.parse(html, encoding: .utf8) else { return }
         }
 
         return (result, error)

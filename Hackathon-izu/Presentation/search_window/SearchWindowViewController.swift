@@ -20,11 +20,11 @@ final class SearchWindowViewController: UIViewController, FloatingPanelLayout {
         ]
     }
     
-    private lazy var googleMapScraper = GoogleMapScraper()
+    private lazy var gnaviScraper = GnaviScraper(webView: webView)
     
     @IBOutlet private weak var webView: WKWebView!
     
     @IBAction func run() {
-        googleMapScraper.scrape(keyword: "伊豆 観光", webView: webView)
+        gnaviScraper.scrape(keyword: "伊豆")
     }
 }
