@@ -25,6 +25,7 @@ class GoogleMapScraper {
             guard let html = document as? String, let doc = try? self.browser.htmlParser.parse(html, encoding: .utf8) else { return }
         }
 
+        result.append(Spot(name: "富戸温泉", latitude: 34.9061188, longitude: 139.1322629))
         return (result, error)
     }
 }

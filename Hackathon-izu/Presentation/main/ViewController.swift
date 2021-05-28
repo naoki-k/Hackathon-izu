@@ -15,18 +15,20 @@ final class ViewController: UIViewController {
     private lazy var locationManager = CLLocationManager()
     
     private lazy var floatingPanelController = FloatingPanelController()
-    private var floatingPanel: SearchWindowViewController!
+    private var searchWindowViewController: SearchWindowViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
+        
+        searchWindowViewController = UIStoryboard(name: "SearchWindow", bundle: nil).instantiateInitialViewController() as? SearchWindowViewController
 
-        floatingPanel = UIStoryboard(name: "SearchWindow", bundle: nil).instantiateInitialViewController() as? SearchWindowViewController
-
-        floatingPanelController.delegate = self
-        floatingPanelController.layout = floatingPanel
-        floatingPanelController.set(contentViewController: floatingPanel)
-        floatingPanelController.addPanel(toParent: self)
+        self.floatingPanelController.delegate = self
+        self.floatingPanelController.layout = searchWindowViewController
+        self.floatingPanelController.set(contentViewController: searchWindowViewController)
+        self.floatingPanelController.addPanel(toParent: self)
+        self.searchWindowViewController.delegate = self
+        
     }
 }
 
@@ -68,4 +70,12 @@ extension ViewController: FloatingPanelControllerDelegate {
 //                searchVC.hideHeader()
 //            }
         }
+}
+
+extension ViewController: SearchWindowViewProtocol {
+    func addMarker(spot: Spot) {
+        let pin = MKPointAnnotation()
+        pin.coordinate = CLLocationCoordinate2DMake(spot.latitude, spot.longitude)
+        self.map.addAnnotation(pin)
+    }
 }
