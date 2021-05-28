@@ -18,8 +18,14 @@ final class SearchWindowViewController: UIViewController, FloatingPanelLayout {
             .tip: FloatingPanelLayoutAnchor(fractionalInset: 0.1, edge: .bottom, referenceGuide: .safeArea),
         ]
     }
+    
+    private lazy var googleMapScraper = GoogleMapScraper()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func run() {
+        googleMapScraper.scrape(keyword: "伊豆 観光")
     }
 }
